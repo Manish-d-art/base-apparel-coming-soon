@@ -9,6 +9,8 @@
 
 $Desaturated-Red:hsl(0, 36%, 70%);
 $Soft-Red: hsl(0, 93%, 68%);
+$grad-1:Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+$grad-2:Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
 
 body{
     display: flex;
@@ -44,8 +46,9 @@ body{
 }
 
 .main__section-2{
+    padding:1.34rem;
     .main__heading{
-        margin:4rem 5rem 2rem;
+        margin:2rem  0rem 2rem;
         font-weight: 400;
         text-transform: uppercase;
         font-size: 3rem;
@@ -59,11 +62,45 @@ body{
 
     .main__text{
         width:100%;
-        padding: 0 2rem 2rem;
         text-align: center;
         line-height: 1.5;
         color: $Desaturated-Red;
+        letter-spacing: -.5px;
+        font-weight: 400;
     }
+
+    .form{
+        position: relative;
+        margin:1rem 0 2rem;
+        padding:0 .5rem;
+        #email{
+            height:50px;
+            width:100%;
+            // margin:1rem 0rem 3rem;
+            border-radius: 40px;
+            border:.5px solid  $Desaturated-Red;
+            padding:1.5rem;
+        }
+        ::placeholder{
+        color: $Desaturated-Red;
+        }
+
+        .arrow-logo{
+            // filter:invert(1) sepia(2) contrast(1) brightness(1);
+            // position:absolute
+
+        }
+        .arrow-logo-block{
+            padding:.8rem 1.6rem;
+            background-color:$Soft-Red;
+            display: inline-block;
+            border-radius: 40%;
+            background-color: $grad-1;
+            position: absolute;
+            right:9px;
+            top:0px;
+        }
+   }
 }
 
 
