@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .hero-img-desk {
@@ -12,13 +20,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.main__logo {
-  width: clamp(7rem, 10vw, 13rem);
-  margin: 2rem 3rem;
+  width: min(100%, 375px);
 }
 
 .hero-img-mob {
   width: 100%;
+}
+
+.main__heading {
+  font-weight: 300;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
