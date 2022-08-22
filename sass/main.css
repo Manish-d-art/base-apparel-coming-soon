@@ -12,10 +12,6 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
-.hero-img-desk {
-  display: none;
-}
-
 .main {
   display: flex;
   flex-direction: column;
@@ -23,11 +19,33 @@ body {
   width: min(100%, 375px);
 }
 
-.hero-img-mob {
+.main__logo-cont .main__logo {
+  margin: 2rem 2rem;
+  width: 7rem;
+}
+.main__logo-cont .hero-img-mob {
   width: 100%;
 }
+.main__logo-cont .hero-img-desk {
+  display: none;
+}
 
-.main__heading {
-  font-weight: 300;
+.main__section-2 .main__heading {
+  margin: 4rem 5rem 2rem;
+  font-weight: 400;
   text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 8px;
+}
+.main__section-2 .main__heading .head-ele {
+  font-weight: 300;
+  color: hsl(0deg, 36%, 70%);
+}
+.main__section-2 .main__text {
+  width: 100%;
+  padding: 0 2rem 2rem;
+  text-align: center;
+  line-height: 1.5;
+  color: hsl(0deg, 36%, 70%);
 }/*# sourceMappingURL=main.css.map */
