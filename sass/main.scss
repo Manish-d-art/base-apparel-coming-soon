@@ -9,14 +9,15 @@
 
 $Desaturated-Red:hsl(0, 36%, 70%);
 $Soft-Red: hsl(0, 93%, 68%);
-$grad-1:Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
-$grad-2:Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+$grad-1: linear-gradient(135deg,  hsl(0, 15%, 85%,.5), hsl(0, 100%, 98%)) ;
+$grad-2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Josefin Sans', sans-serif;
+
 }
 
 
@@ -25,11 +26,12 @@ body{
     flex-direction: column;
     align-items: center;
     width:min(100%,375px);
+    background-image: $grad-1;
 }
 
 .main__logo-cont{
 
-     .main__logo{
+    .main__logo{
             margin:2rem 2rem;
             width:7rem;
             }
@@ -39,8 +41,8 @@ body{
    }
 
    .hero-img-desk{
-    display: none;
-}
+                 display: none;
+            }
     
     
 }
@@ -76,29 +78,31 @@ body{
         #email{
             height:50px;
             width:100%;
-            // margin:1rem 0rem 3rem;
+            margin:1rem 0rem 3rem 0;
             border-radius: 40px;
             border:.5px solid  $Desaturated-Red;
             padding:1.5rem;
+            
         }
         ::placeholder{
         color: $Desaturated-Red;
         }
-
         .arrow-logo{
-            // filter:invert(1) sepia(2) contrast(1) brightness(1);
-            // position:absolute
-
+            margin-top: 15px;
         }
+        
         .arrow-logo-block{
-            padding:.8rem 1.6rem;
-            background-color:$Soft-Red;
+            height:50px;
+            width:70px;
+            text-align: center;
             display: inline-block;
-            border-radius: 40%;
-            background-color: $grad-1;
+            border-radius: 50px;
+            background-image: $grad-2;
             position: absolute;
-            right:9px;
-            top:0px;
+            right:8px;
+            top:15px;
+            cursor: pointer;
+
         }
    }
 }
