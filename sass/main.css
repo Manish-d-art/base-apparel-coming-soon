@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero-img-desk {
+  display: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__logo {
+  width: clamp(7rem, 10vw, 13rem);
+  margin: 2rem 3rem;
+}
+
+.hero-img-mob {
+  width: 100%;
+}/*# sourceMappingURL=main.css.map */
