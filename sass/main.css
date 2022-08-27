@@ -63,6 +63,11 @@ body {
     padding: 0.5rem;
   }
 }
+@media (min-width: 992px) {
+  .main__section-2 {
+    padding: 10% 16% 0 10%;
+  }
+}
 .main__section-2 .main__logo-desk {
   display: none;
 }
