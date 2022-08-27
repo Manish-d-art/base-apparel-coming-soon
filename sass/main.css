@@ -22,14 +22,13 @@ body {
 @media (min-width: 768px) {
   .main {
     flex-direction: row-reverse;
-    width: min(100%, 768px);
+    width: clamp(768px, 80%, 1440px) !important;
   }
   .main .main__logo-cont {
-    flex-basis: 40%;
+    flex-basis: 50%;
   }
   .main .main__section-2 {
-    flex-basis: 60%;
-    padding: 3.34rem !important;
+    flex-basis: 50%;
   }
 }
 
