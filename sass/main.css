@@ -22,17 +22,11 @@ body {
 @media (min-width: 768px) {
   .main {
     flex-direction: row-reverse;
-    width: clamp(768px, 80%, 1440px) !important;
-  }
-  .main .main__logo-cont {
-    flex-basis: 50%;
-  }
-  .main .main__section-2 {
-    flex-basis: 50%;
+    width: 100%;
   }
 }
 
-.main__logo-cont .main__logo {
+.main__logo-cont .main__logo-mob {
   margin: 2rem 2rem;
   width: 7rem;
 }
@@ -50,14 +44,21 @@ body {
   .main__logo-cont .hero-img-mob {
     display: none;
   }
-  .main__logo-cont .main__logo {
-    position: absolute;
-    left: 0;
+  .main__logo-cont .main__logo-mob {
+    display: none;
   }
 }
 
 .main__section-2 {
   padding: 1.34rem;
+}
+.main__section-2 .main__logo-desk {
+  display: none;
+}
+@media (min-width: 768px) {
+  .main__section-2 .main__logo-desk {
+    display: block;
+  }
 }
 .main__section-2 .main__heading {
   margin: 2rem 0rem 2rem;
