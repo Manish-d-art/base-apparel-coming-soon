@@ -15,14 +15,15 @@ body {
 .main {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: min(100%, 375px);
   background-image: linear-gradient(135deg, hsla(0deg, 15%, 85%, 0.5), hsl(0deg, 100%, 98%));
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main {
     flex-direction: row-reverse;
     width: 100%;
+    justify-content: space-between;
   }
 }
 
@@ -36,7 +37,12 @@ body {
 .main__logo-cont .hero-img-desk {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 993px) and (max-width: 1200px) {
+  .main__logo-cont .hero-img-desk {
+    width: 441px !important;
+  }
+}
+@media (min-width: 992px) {
   .main__logo-cont .hero-img-desk {
     display: block !important;
     width: 100%;
@@ -57,17 +63,14 @@ body {
     padding: 0.5rem;
   }
 }
-@media (min-width: 768px) {
-  .main__section-2 {
-    padding: 10% 15% 0 10%;
-  }
-}
 .main__section-2 .main__logo-desk {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main__section-2 .main__logo-desk {
     display: block;
+    position: absolute;
+    top: 8%;
   }
 }
 .main__section-2 .main__heading {
@@ -82,9 +85,11 @@ body {
   font-weight: 300;
   color: hsl(0deg, 36%, 70%);
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main__section-2 .main__heading {
     text-align: start !important;
+    width: 411px;
+    font-size: clamp(3rem, -0.5732rem + 7.14vw, 5rem) !important;
   }
 }
 .main__section-2 .main__text {
@@ -95,7 +100,7 @@ body {
   letter-spacing: -0.5px;
   font-weight: 400;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main__section-2 .main__text {
     text-align: start !important;
     width: 400px;
@@ -106,7 +111,7 @@ body {
   margin: 1rem 0 2rem;
   padding: 0 0.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main__section-2 .form {
     padding: 0 !important;
   }
@@ -143,9 +148,9 @@ body {
   top: 16px;
   cursor: pointer;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .main__section-2 .form .arrow-logo-block {
-    right: 1px !important;
+    right: 0px !important;
     top: 16px !important;
   }
 }/*# sourceMappingURL=main.css.map */
