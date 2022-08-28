@@ -141,9 +141,21 @@ body {
 .main__section-2 .form .arrow-logo {
   margin-top: 15px;
 }
+.main__section-2 .form .error-icon {
+  position: absolute;
+  right: 86px;
+  top: 28px;
+}
+.main__section-2 .form .error-msge {
+  font-size: 0.8rem;
+  position: relative;
+  color: rgb(237, 127, 127);
+  top: -39px;
+  left: 27px;
+}
 .main__section-2 .form .arrow-logo-block {
-  height: 50px;
-  width: 70px;
+  height: 51px;
+  width: 71px;
   text-align: center;
   display: inline-block;
   border-radius: 50px;
@@ -155,10 +167,14 @@ body {
 }
 @media (min-width: 992px) {
   .main__section-2 .form .arrow-logo-block {
-    right: 0px !important;
-    top: 16px !important;
+    right: -1px !important;
+    top: 15.5px !important;
   }
 }
 .main__section-2 .form .arrow-logo-block :hover {
   background-image: linear-gradient(135deg, hsla(0deg, 15%, 85%, 0.5), hsl(0deg, 100%, 98%));
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

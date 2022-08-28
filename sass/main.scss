@@ -163,10 +163,22 @@ body{
         .arrow-logo{
             margin-top: 15px;
         }
+        .error-icon{
+            position:absolute;
+            right: 86px;
+            top: 28px;
+        }
+        .error-msge{
+            font-size: .8rem;
+            position: relative;
+            color:rgb(237, 127, 127);
+            top: -39px;
+            left: 27px;
+        }
         
         .arrow-logo-block{
-            height:50px;
-            width:70px;
+            height:51px;
+            width:71px;
             text-align: center;
             display: inline-block;
             border-radius: 50px;
@@ -176,8 +188,8 @@ body{
             top:16px;
             cursor: pointer;
             @media (min-width:992px) {
-                right:0px !important;
-                top:16px !important;
+                right:-1px !important;
+                top:15.5px !important;
             }
             :hover{
             background-image: $grad-1;
@@ -185,6 +197,9 @@ body{
 
         }
    }
+}
+.hidden{
+    display: none;
 }
 
 
