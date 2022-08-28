@@ -1,0 +1,1 @@
+const InputArea=document.getElementById('email');
